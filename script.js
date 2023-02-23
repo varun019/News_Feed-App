@@ -1,8 +1,8 @@
 const API_Key = "5cba0b39f8ee42b6b3bf38344cb9929a"
-const BUSINESS_NEWS = ("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=")
-const SPORTS_NEWS = ("https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=")
-const TECHNOLOGY_NEWS = ("https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=")
-const ENTERTAINMENT_NEWS = ("https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=")
+const BUSINESS_NEWS = ("/v2/top-headlines?country=us&category=business&apiKey=")
+const SPORTS_NEWS = ("/v2/top-headlines?country=us&category=sports&apiKey=")
+const TECHNOLOGY_NEWS = ("/v2/top-headlines?country=us&category=technology&apiKey=")
+const ENTERTAINMENT_NEWS = ("/v2/top-headlines?country=us&category=entertainment&apiKey=")
 const businessbtn = document.getElementById("business")
 const sportsbtn = document.getElementById("sports")
 const techbtn = document.getElementById("tech")
@@ -10,6 +10,8 @@ const entertainmentbtn = document.getElementById("entertainment")
 const newsType = document.getElementById("newsType")
 const newsDetails = document.getElementById("newsdetails")
 var newsDataArr = [];
+
+"proxy"="https://localhost:5000","https://newsapi.org/"
 
 window.onload = function(){
   fetchsports_news();
