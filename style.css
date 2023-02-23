@@ -1,0 +1,98 @@
+.nav-item:hover {
+    border: none;
+    cursor: pointer;
+}
+body{
+    background-color:  #FFFFFF
+}
+.navbar>.container-fluid {
+    background-color: lightblue;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:
+        black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+h2 {
+    text-align: center;
+}
+
+.card-title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.date {
+    margin-top: 7px;
+    float: right;
+    color: black;
+}
+
+.text-primary {
+    color: black;
+}
+
+h6 {
+    font-size: smaller;
+}
+
+.text-muted {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-top: 15px;
+    width: 100%;
+}
+/* 
+.container {
+    /* margin-top: 20px; */
+
+
+p {
+    color: white;
+}
+a{
+    color: white;
+}
+img{
+    width: 100%;
+    height: 200px;
+    display: block;
+    position: relative;
+}
+
+.mt-4{
+    color: black;
+    background-color: lightblue;
+}
